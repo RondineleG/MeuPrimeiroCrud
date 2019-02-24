@@ -1,0 +1,30 @@
+CREATE DATABaSE ProjetoEmCamadasDB
+GO
+USE ProjetoEmCamadasDB
+GO
+CREATE TABLE  tblClientes
+(
+ Codigo INT IDENTITY (1,1) PRIMARY KEY NOT NULL,
+ Nome VARCHAR (50) NOT NULL,
+ CPF VARCHAR (15) NOT NULL,
+ DataNascimento DATETIME NOT NULL,
+ Sexo BIT NOT NULL,
+ Telefone  VARCHAR (15)  NULL,
+ Celular VARCHAR (15)  NULL,
+ CEP	VARCHAR (50) NOT NULL,
+ Endereco VARCHAR (50) NOT NULL,
+ Bairro VARCHAR (50) NOT NULL,
+ Cidade   VARCHAR (50) NOT NULL,
+ Estado	 VARCHAR (2) NOT NULL,
+ Complemento	VARCHAR (50) NULL,
+ Email   VARCHAR (50)  NULL,
+ Obs  TEXT NULL
+)
+
+
+
+   
+
+
+
+
