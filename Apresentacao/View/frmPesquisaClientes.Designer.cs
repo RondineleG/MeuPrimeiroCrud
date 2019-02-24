@@ -74,9 +74,10 @@
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(674, 336);
+            this.btnConsultar.Location = new System.Drawing.Point(661, 620);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(90, 36);
+            this.btnConsultar.Size = new System.Drawing.Size(118, 50);
             this.btnConsultar.TabIndex = 41;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = false;
@@ -84,9 +85,10 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(481, 336);
+            this.btnExcluir.Location = new System.Drawing.Point(448, 620);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(90, 36);
+            this.btnExcluir.Size = new System.Drawing.Size(112, 50);
             this.btnExcluir.TabIndex = 40;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
@@ -94,9 +96,10 @@
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(274, 336);
+            this.btnAlterar.Location = new System.Drawing.Point(244, 620);
+            this.btnAlterar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(102, 36);
+            this.btnAlterar.Size = new System.Drawing.Size(116, 50);
             this.btnAlterar.TabIndex = 39;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = false;
@@ -104,9 +107,10 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(15, 336);
+            this.btnCadastrar.Location = new System.Drawing.Point(28, 620);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(106, 36);
+            this.btnCadastrar.Size = new System.Drawing.Size(137, 50);
             this.btnCadastrar.TabIndex = 38;
             this.btnCadastrar.Text = "&Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -139,11 +143,12 @@
             dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCliente.DefaultCellStyle = dataGridViewCellStyle14;
-            this.dgvCliente.Location = new System.Drawing.Point(15, 96);
+            this.dgvCliente.Location = new System.Drawing.Point(28, 193);
+            this.dgvCliente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dgvCliente.MultiSelect = false;
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCliente.Size = new System.Drawing.Size(749, 216);
+            this.dgvCliente.Size = new System.Drawing.Size(751, 399);
             this.dgvCliente.TabIndex = 37;
             // 
             // colCodigo
@@ -283,9 +288,10 @@
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(689, 67);
+            this.btnPesquisar.Location = new System.Drawing.Point(661, 118);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisar.Size = new System.Drawing.Size(118, 42);
             this.btnPesquisar.TabIndex = 36;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
@@ -293,17 +299,20 @@
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(103, 67);
+            this.txtPesquisa.Location = new System.Drawing.Point(189, 124);
+            this.txtPesquisa.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtPesquisa.Name = "txtPesquisa";
-            this.txtPesquisa.Size = new System.Drawing.Size(581, 20);
+            this.txtPesquisa.Size = new System.Drawing.Size(450, 29);
             this.txtPesquisa.TabIndex = 35;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // lblPesquisa
             // 
             this.lblPesquisa.AutoSize = true;
-            this.lblPesquisa.Location = new System.Drawing.Point(12, 67);
+            this.lblPesquisa.Location = new System.Drawing.Point(22, 124);
+            this.lblPesquisa.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblPesquisa.Name = "lblPesquisa";
-            this.lblPesquisa.Size = new System.Drawing.Size(79, 13);
+            this.lblPesquisa.Size = new System.Drawing.Size(143, 25);
             this.lblPesquisa.TabIndex = 34;
             this.lblPesquisa.Text = "Nome / Codigo";
             // 
@@ -316,8 +325,9 @@
             this.pnlTopo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlTopo.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pnlTopo.Name = "pnlTopo";
-            this.pnlTopo.Size = new System.Drawing.Size(776, 30);
+            this.pnlTopo.Size = new System.Drawing.Size(808, 55);
             this.pnlTopo.TabIndex = 44;
             // 
             // btnMininizar
@@ -326,9 +336,10 @@
             this.btnMininizar.BackColor = System.Drawing.Color.DarkRed;
             this.btnMininizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMininizar.ForeColor = System.Drawing.Color.White;
-            this.btnMininizar.Location = new System.Drawing.Point(720, 1);
+            this.btnMininizar.Location = new System.Drawing.Point(705, 2);
+            this.btnMininizar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnMininizar.Name = "btnMininizar";
-            this.btnMininizar.Size = new System.Drawing.Size(30, 30);
+            this.btnMininizar.Size = new System.Drawing.Size(55, 55);
             this.btnMininizar.TabIndex = 1;
             this.btnMininizar.Text = "--";
             this.btnMininizar.UseVisualStyleBackColor = false;
@@ -340,9 +351,10 @@
             this.btnFeichar.BackColor = System.Drawing.Color.Maroon;
             this.btnFeichar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFeichar.ForeColor = System.Drawing.Color.White;
-            this.btnFeichar.Location = new System.Drawing.Point(747, 1);
+            this.btnFeichar.Location = new System.Drawing.Point(755, 2);
+            this.btnFeichar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnFeichar.Name = "btnFeichar";
-            this.btnFeichar.Size = new System.Drawing.Size(30, 30);
+            this.btnFeichar.Size = new System.Drawing.Size(55, 55);
             this.btnFeichar.TabIndex = 2;
             this.btnFeichar.Text = "X";
             this.btnFeichar.UseVisualStyleBackColor = false;
@@ -350,10 +362,10 @@
             // 
             // frmPesquisaClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(776, 421);
+            this.ClientSize = new System.Drawing.Size(808, 680);
             this.Controls.Add(this.pnlTopo);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.btnExcluir);
@@ -365,6 +377,7 @@
             this.Controls.Add(this.lblPesquisa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmPesquisaClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();

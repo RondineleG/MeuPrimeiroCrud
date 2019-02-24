@@ -154,6 +154,10 @@ namespace Apresentacao.View
 
         }
 
+        private void txtPesquisa_TextChanged(Object sender, EventArgs e)
+        {
+
         }
+    }
 
     }
