@@ -1,4 +1,4 @@
-﻿namespace Apresentacao.View
+﻿namespace Apresentacao.Views
 {
     partial class frmPesquisaClientes
     {
@@ -143,12 +143,12 @@
             dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCliente.DefaultCellStyle = dataGridViewCellStyle14;
-            this.dgvCliente.Location = new System.Drawing.Point(28, 193);
+            this.dgvCliente.Location = new System.Drawing.Point(20, 193);
             this.dgvCliente.Margin = new System.Windows.Forms.Padding(6);
             this.dgvCliente.MultiSelect = false;
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCliente.Size = new System.Drawing.Size(1559, 399);
+            this.dgvCliente.Size = new System.Drawing.Size(1555, 399);
             this.dgvCliente.TabIndex = 37;
             // 
             // colCodigo
@@ -301,6 +301,7 @@
             // 
             this.txtPesquisa.Location = new System.Drawing.Point(189, 124);
             this.txtPesquisa.Margin = new System.Windows.Forms.Padding(6);
+            this.txtPesquisa.Multiline = true;
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(450, 29);
             this.txtPesquisa.TabIndex = 35;
@@ -327,7 +328,7 @@
             this.pnlTopo.Location = new System.Drawing.Point(0, 0);
             this.pnlTopo.Margin = new System.Windows.Forms.Padding(6);
             this.pnlTopo.Name = "pnlTopo";
-            this.pnlTopo.Size = new System.Drawing.Size(1613, 55);
+            this.pnlTopo.Size = new System.Drawing.Size(1599, 55);
             this.pnlTopo.TabIndex = 44;
             // 
             // btnMininizar
@@ -336,7 +337,7 @@
             this.btnMininizar.BackColor = System.Drawing.Color.DarkRed;
             this.btnMininizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMininizar.ForeColor = System.Drawing.Color.White;
-            this.btnMininizar.Location = new System.Drawing.Point(1510, 2);
+            this.btnMininizar.Location = new System.Drawing.Point(1496, 2);
             this.btnMininizar.Margin = new System.Windows.Forms.Padding(6);
             this.btnMininizar.Name = "btnMininizar";
             this.btnMininizar.Size = new System.Drawing.Size(55, 55);
@@ -351,7 +352,7 @@
             this.btnFeichar.BackColor = System.Drawing.Color.Maroon;
             this.btnFeichar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFeichar.ForeColor = System.Drawing.Color.White;
-            this.btnFeichar.Location = new System.Drawing.Point(1560, 2);
+            this.btnFeichar.Location = new System.Drawing.Point(1546, 2);
             this.btnFeichar.Margin = new System.Windows.Forms.Padding(6);
             this.btnFeichar.Name = "btnFeichar";
             this.btnFeichar.Size = new System.Drawing.Size(55, 55);
@@ -365,7 +366,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1613, 680);
+            this.ClientSize = new System.Drawing.Size(1599, 680);
             this.Controls.Add(this.pnlTopo);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.btnExcluir);
@@ -380,6 +381,8 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmPesquisaClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmPesquisaClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             this.pnlTopo.ResumeLayout(false);
             this.ResumeLayout(false);
