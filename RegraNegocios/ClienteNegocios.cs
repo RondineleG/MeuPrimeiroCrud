@@ -13,21 +13,21 @@
         {
             try
             {
-                this.AcessoDados.LimparParametros();
-                this.AcessoDados.AdicionarParametros("@Nome", cliente.Nome);
-                this.AcessoDados.AdicionarParametros("@CPF", cliente.CPF);
-                this.AcessoDados.AdicionarParametros("@DataNascimento", cliente.DataNascimento);
-                this.AcessoDados.AdicionarParametros("@Sexo", cliente.Sexo);
-                this.AcessoDados.AdicionarParametros("@Telefone", cliente.Telefone);
-                this.AcessoDados.AdicionarParametros("@Celular", cliente.Celular);
-                this.AcessoDados.AdicionarParametros("@CEP", cliente.CEP);
-                this.AcessoDados.AdicionarParametros("@Endereco", cliente.Endereco);
-                this.AcessoDados.AdicionarParametros("@Bairro", cliente.Bairro);
-                this.AcessoDados.AdicionarParametros("@Cidade", cliente.Cidade);
-                this.AcessoDados.AdicionarParametros("@Estado", cliente.Estado);
-                this.AcessoDados.AdicionarParametros("@Complemento", cliente.Complemento);
-                this.AcessoDados.AdicionarParametros("@Email", cliente.Email);
-                this.AcessoDados.AdicionarParametros("@Obs", cliente.Obs);
+                AcessoDados.LimparParametros();
+                AcessoDados.AdicionarParametros("@Nome", cliente.Nome);
+                AcessoDados.AdicionarParametros("@CPF", cliente.CPF);
+                AcessoDados.AdicionarParametros("@DataNascimento", cliente.DataNascimento);
+                AcessoDados.AdicionarParametros("@Sexo", cliente.Sexo);
+                AcessoDados.AdicionarParametros("@Telefone", cliente.Telefone);
+                AcessoDados.AdicionarParametros("@Celular", cliente.Celular);
+                AcessoDados.AdicionarParametros("@CEP", cliente.CEP);
+                AcessoDados.AdicionarParametros("@Endereco", cliente.Endereco);
+                AcessoDados.AdicionarParametros("@Bairro", cliente.Bairro);
+                AcessoDados.AdicionarParametros("@Cidade", cliente.Cidade);
+                AcessoDados.AdicionarParametros("@Estado", cliente.Estado);
+                AcessoDados.AdicionarParametros("@Complemento", cliente.Complemento);
+                AcessoDados.AdicionarParametros("@Email", cliente.Email);
+                AcessoDados.AdicionarParametros("@Obs", cliente.Obs);
 
                 String codigo = this.AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteInserir").ToString();
 
@@ -43,22 +43,22 @@
         {
             try
             {
-                this.AcessoDados.LimparParametros();
-                this.AcessoDados.AdicionarParametros("@Codigo", cliente.Codigo);
-                this.AcessoDados.AdicionarParametros("@Nome", cliente.Nome);
-                this.AcessoDados.AdicionarParametros("@CPF", cliente.CPF);
-                this.AcessoDados.AdicionarParametros("@DataNascimento", cliente.DataNascimento);
-                this.AcessoDados.AdicionarParametros("@Sexo", cliente.Sexo);
-                this.AcessoDados.AdicionarParametros("@Telefone", cliente.Telefone);
-                this.AcessoDados.AdicionarParametros("@Celular", cliente.Celular);
-                this.AcessoDados.AdicionarParametros("@CEP", cliente.CEP);
-                this.AcessoDados.AdicionarParametros("@Endereco", cliente.Endereco);
-                this.AcessoDados.AdicionarParametros("@Bairro", cliente.Bairro);
-                this.AcessoDados.AdicionarParametros("@Cidade", cliente.Cidade);
-                this.AcessoDados.AdicionarParametros("@Estado", cliente.Estado);
-                this.AcessoDados.AdicionarParametros("@Complemento", cliente.Complemento);
-                this.AcessoDados.AdicionarParametros("@Email", cliente.Email);
-                this.AcessoDados.AdicionarParametros("@Obs", cliente.Obs);
+                AcessoDados.LimparParametros();
+                AcessoDados.AdicionarParametros("@Codigo", cliente.Codigo);
+                AcessoDados.AdicionarParametros("@Nome", cliente.Nome);
+                AcessoDados.AdicionarParametros("@CPF", cliente.CPF);
+                AcessoDados.AdicionarParametros("@DataNascimento", cliente.DataNascimento);
+                AcessoDados.AdicionarParametros("@Sexo", cliente.Sexo);
+                AcessoDados.AdicionarParametros("@Telefone", cliente.Telefone);
+                AcessoDados.AdicionarParametros("@Celular", cliente.Celular);
+                AcessoDados.AdicionarParametros("@CEP", cliente.CEP);
+                AcessoDados.AdicionarParametros("@Endereco", cliente.Endereco);
+                AcessoDados.AdicionarParametros("@Bairro", cliente.Bairro);
+                AcessoDados.AdicionarParametros("@Cidade", cliente.Cidade);
+                AcessoDados.AdicionarParametros("@Estado", cliente.Estado);
+                AcessoDados.AdicionarParametros("@Complemento", cliente.Complemento);
+                AcessoDados.AdicionarParametros("@Email", cliente.Email);
+                AcessoDados.AdicionarParametros("@Obs", cliente.Obs);
 
                 String Codigo = this.AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteAlterar").ToString();
 
@@ -75,8 +75,8 @@
         {
             try
             {
-                this.AcessoDados.LimparParametros();
-                this.AcessoDados.AdicionarParametros("@Codigo", cliente.Codigo);
+                AcessoDados.LimparParametros();
+                AcessoDados.AdicionarParametros("@Codigo", cliente.Codigo);
                 String Codigo = this.AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteExcluir").ToString();
                 return Codigo;
 
@@ -98,8 +98,8 @@
             {
                 ClienteColecao clienteColecao = new ClienteColecao();
 
-                this.AcessoDados.LimparParametros();
-                this.AcessoDados.AdicionarParametros("@Nome", nome);
+                AcessoDados.LimparParametros();
+                AcessoDados.AdicionarParametros("@Nome", nome);
                 var dataTableCliente = this.AcessoDados.ExecutarConsulta(CommandType.StoredProcedure, "ClienteConsultaPorNome");
 
                 foreach (DataRow Linha in dataTableCliente.Rows)
@@ -141,8 +141,8 @@
             {
                 ClienteColecao clienteColecao = new ClienteColecao();
 
-                this.AcessoDados.LimparParametros();
-                this.AcessoDados.AdicionarParametros("@Codigo", codigo);
+                AcessoDados.LimparParametros();
+                AcessoDados.AdicionarParametros("@Codigo", codigo);
                 var dataTableCliente = this.AcessoDados.ExecutarConsulta(CommandType.StoredProcedure, "ClienteConsultaPorNome");
 
                 foreach (DataRow Linha in dataTableCliente.Rows)
