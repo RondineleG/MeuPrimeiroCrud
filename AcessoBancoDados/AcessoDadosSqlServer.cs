@@ -19,16 +19,16 @@
 
         public void LimparParametros()
         {
-            this.sqlParameterCollection.Clear();
+            sqlParameterCollection.Clear();
         }
 
         public void AdicionarParametros(String nomeParametro, Object valorParametro)
         {
-            this.sqlParameterCollection.Add(new SqlParameter(nomeParametro, valorParametro));
+            sqlParameterCollection.Add(new SqlParameter(nomeParametro, valorParametro));
         }
 
         //Inserir, Alterar e Excluir.
-        public Object ExecutarManipulacao(CommandType commandType, String nomeStoredProcedureOuTextoSql)
+        public object ExecutarManipulacao(CommandType commandType, String nomeStoredProcedureOuTextoSql)
         {
             try
             {
