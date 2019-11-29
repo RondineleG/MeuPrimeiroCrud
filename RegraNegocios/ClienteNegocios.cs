@@ -9,7 +9,7 @@
     {
         private readonly AcessoDadosSqlServer AcessoDados = new AcessoDadosSqlServer();
 
-        public String Inserir(ClienteObjeto cliente)
+        public string Inserir(ClienteObjeto cliente)
         {
             try
             {
@@ -29,7 +29,7 @@
                 AcessoDados.AdicionarParametros("@Email", cliente.Email);
                 AcessoDados.AdicionarParametros("@Obs", cliente.Obs);
 
-                String codigo = this.AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteInserir").ToString();
+                string codigo = this.AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteInserir").ToString();
 
                 return codigo;
             }
@@ -39,7 +39,7 @@
             }
         }
 
-        public String Alterar(ClienteObjeto cliente)
+        public string Alterar(ClienteObjeto cliente)
         {
             try
             {
@@ -60,7 +60,7 @@
                 AcessoDados.AdicionarParametros("@Email", cliente.Email);
                 AcessoDados.AdicionarParametros("@Obs", cliente.Obs);
 
-                String Codigo = this.AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteAlterar").ToString();
+                string Codigo = AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteAlterar").ToString();
 
                 return Codigo;
             }
@@ -71,13 +71,13 @@
 
         }
 
-        public String Excluir(ClienteObjeto cliente)
+        public string Excluir(ClienteObjeto cliente)
         {
             try
             {
                 AcessoDados.LimparParametros();
                 AcessoDados.AdicionarParametros("@Codigo", cliente.Codigo);
-                String Codigo = this.AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteExcluir").ToString();
+                string Codigo = AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteExcluir").ToString();
                 return Codigo;
 
             }
@@ -96,7 +96,7 @@
         {
             try
             {
-                ClienteColecao clienteColecao = new ClienteColecao();
+                var clienteColecao = new ClienteColecao();
 
                 AcessoDados.LimparParametros();
                 AcessoDados.AdicionarParametros("@Nome", nome);
@@ -104,7 +104,7 @@
 
                 foreach (DataRow Linha in dataTableCliente.Rows)
                 {
-                    ClienteObjeto cliente = new ClienteObjeto
+                    var cliente = new ClienteObjeto
                     {
                         Codigo = Convert.ToInt32(Linha["Codigo"]),
                         Nome = Convert.ToString(Linha["Nome"]),
@@ -139,7 +139,7 @@
         {
             try
             {
-                ClienteColecao clienteColecao = new ClienteColecao();
+                var clienteColecao = new ClienteColecao();
 
                 AcessoDados.LimparParametros();
                 AcessoDados.AdicionarParametros("@Codigo", codigo);
@@ -147,7 +147,7 @@
 
                 foreach (DataRow Linha in dataTableCliente.Rows)
                 {
-                    ClienteObjeto cliente = new ClienteObjeto
+                    var cliente = new ClienteObjeto
                     {
                         Codigo = Convert.ToInt32(Linha["Codigo"]),
                         Nome = Convert.ToString(Linha["Nome"]),
