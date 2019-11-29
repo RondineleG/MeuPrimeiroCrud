@@ -100,7 +100,7 @@ namespace Apresentacao.View
             var clienteSelecionado = (dgvCliente.SelectedRows[0].DataBoundItem as ClienteObjeto);
 
             var cliente = new frmClientes(Modificador.Consultar, clienteSelecionado);
-            cliente.Show();
+            cliente.ShowDialog();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -154,10 +154,9 @@ namespace Apresentacao.View
 
         }
 
-        private void txtPesquisa_TextChanged(Object sender, EventArgs e)
-        {
+         
 
-        }
+         
     }
 
     }

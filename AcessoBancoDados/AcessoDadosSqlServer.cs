@@ -11,7 +11,7 @@
         private SqlConnection CriarConexao()
         {
             // Pegar sempre a string de conexão.
-            return new SqlConnection(Settings.Default.ConexaoBD);
+            return new SqlConnection(Settings.Default.ConnectionString);
         }
 
         //Parâmetros que vão para o banco.

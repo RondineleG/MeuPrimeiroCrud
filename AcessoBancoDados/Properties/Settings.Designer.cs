@@ -33,5 +33,15 @@ namespace AcessoBancoDados.Properties {
                 return ((string)(this["ConexaoBD"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server=den1.mssql8.gear.host;Database=pdadb;User Id=pdadb; Password=Gw6Q_c?VZ9zF")]
+        public string ConnectionString {
+            get {
+                return ((string)(this["ConnectionString"]));
+            }
+        }
     }
 }

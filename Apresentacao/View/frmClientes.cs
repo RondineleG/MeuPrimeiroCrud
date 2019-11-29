@@ -1,12 +1,11 @@
-﻿using System;
+﻿using Apresentacao.Models;
+using ObjetoTransferencia;
+using RegraNegocios;
+using System;
 using System.Windows.Forms;
 
-using RegraNegocios;
-using ObjetoTransferencia;
-using Apresentacao.Models;
-
 namespace Apresentacao.View
-    {
+{
     public partial class frmClientes : Form
     {
         Modificador telaSelecionada;
