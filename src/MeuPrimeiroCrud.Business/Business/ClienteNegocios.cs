@@ -1,7 +1,7 @@
-﻿namespace RegraNegocios
+﻿namespace MeuPrimeiroCrud.Business
 {
-    using AcessoBancoDados;
-    using ObjetoTransferencia;
+    using MeuPrimeiroCrud.Business.Models;
+    using MeuPrimeiroCrud.Data;
     using System;
     using System.Data;
 

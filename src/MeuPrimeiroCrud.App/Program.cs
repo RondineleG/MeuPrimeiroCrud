@@ -1,6 +1,6 @@
-﻿namespace Apresentacao
+﻿namespace MeuPrimeiroCrud.View
 {
-    using Apresentacao.View;
+    using MeuPrimeiroCrud.View.View;
     using System.Windows.Forms;
 
     internal static class Program

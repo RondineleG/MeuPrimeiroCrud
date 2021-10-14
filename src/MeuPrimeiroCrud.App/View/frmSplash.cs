@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Apresentacao.View
+namespace MeuPrimeiroCrud.View.View
 {
     public partial class frmSplash : Form
     {

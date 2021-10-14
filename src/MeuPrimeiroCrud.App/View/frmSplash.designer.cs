@@ -1,4 +1,4 @@
-﻿namespace Apresentacao.View
+﻿namespace MeuPrimeiroCrud.View.View
 {
     partial class frmSplash
     {
@@ -57,7 +57,7 @@
             // P1
             // 
             this.P1.BackColor = System.Drawing.Color.Transparent;
-            this.P1.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
+            this.P1.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P1.Location = new System.Drawing.Point(2, 286);
             this.P1.Name = "P1";
@@ -69,7 +69,7 @@
             // P3
             // 
             this.P3.BackColor = System.Drawing.Color.Transparent;
-            this.P3.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
+            this.P3.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P3.Location = new System.Drawing.Point(104, 286);
             this.P3.Name = "P3";
@@ -81,7 +81,7 @@
             // P5
             // 
             this.P5.BackColor = System.Drawing.Color.Transparent;
-            this.P5.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
+            this.P5.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P5.Location = new System.Drawing.Point(207, 286);
             this.P5.Name = "P5";
@@ -93,7 +93,7 @@
             // P2
             // 
             this.P2.BackColor = System.Drawing.Color.Transparent;
-            this.P2.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
+            this.P2.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P2.Location = new System.Drawing.Point(44, 286);
             this.P2.Name = "P2";
@@ -105,7 +105,7 @@
             // P4
             // 
             this.P4.BackColor = System.Drawing.Color.Transparent;
-            this.P4.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
+            this.P4.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P4.Location = new System.Drawing.Point(149, 286);
             this.P4.Name = "P4";
@@ -117,7 +117,7 @@
             // P8
             // 
             this.P8.BackColor = System.Drawing.Color.Transparent;
-            this.P8.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
+            this.P8.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P8.Location = new System.Drawing.Point(375, 286);
             this.P8.Name = "P8";
@@ -129,7 +129,7 @@
             // P6
             // 
             this.P6.BackColor = System.Drawing.Color.Transparent;
-            this.P6.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
+            this.P6.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P6.Location = new System.Drawing.Point(260, 286);
             this.P6.Name = "P6";
@@ -141,7 +141,7 @@
             // P7
             // 
             this.P7.BackColor = System.Drawing.Color.Transparent;
-            this.P7.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
+            this.P7.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P7.Location = new System.Drawing.Point(317, 286);
             this.P7.Name = "P7";

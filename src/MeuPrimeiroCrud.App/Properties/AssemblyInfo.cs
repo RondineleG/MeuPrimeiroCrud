@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AcessoBancoDados")]
+[assembly: AssemblyTitle("MeuPrimeiroCrud.View")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AcessoBancoDados")]
+[assembly: AssemblyProduct("MeuPrimeiroCrud.View")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1c01636c-98e3-4b14-84b9-06446c02a258")]
+[assembly: Guid("416a8cbd-01f7-4e22-b5f8-178f15022214")]
 
 // Version information for an assembly consists of the following four values:
 //

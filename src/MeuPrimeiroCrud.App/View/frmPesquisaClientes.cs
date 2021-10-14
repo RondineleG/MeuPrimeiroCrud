@@ -1,10 +1,9 @@
-﻿using Apresentacao.Models;
-using ObjetoTransferencia;
-using RegraNegocios;
+﻿using MeuPrimeiroCrud.Business;
+using MeuPrimeiroCrud.Business.Models;
 using System;
 using System.Windows.Forms;
 
-namespace Apresentacao.View
+namespace MeuPrimeiroCrud.View.View
 {
     public partial class frmPesquisaClientes : Form
     {

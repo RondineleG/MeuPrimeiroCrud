@@ -7,8 +7,8 @@
     <ProjectGuid>{2275A4E3-64F2-4657-883B-2B182DC024D5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Apresentacao</RootNamespace>
-    <AssemblyName>Apresentacao</AssemblyName>
+    <RootNamespace>MeuPrimeiroCrud.View</RootNamespace>
+    <AssemblyName>MeuPrimeiroCrud.View</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -144,13 +144,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ObjetoTransferencia\ObjetoTransferencia.csproj">
-      <Project>{6494abaa-d84a-4ef8-87d2-660bc7342d94}</Project>
-      <Name>ObjetoTransferencia</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RegraNegocios\RegraNegocios.csproj">
+    <ProjectReference Include="..\MeuPrimeiroCrud.Business\MeuPrimeiroCrud.Business.csproj">
       <Project>{acc14ea7-b581-4658-a1af-a8b3346dbcff}</Project>
-      <Name>RegraNegocios</Name>
+      <Name>MeuPrimeiroCrud.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MeuPrimeiroCrud.Data\MeuPrimeiroCrud.Data.csproj">
+      <Project>{ba72da1d-5628-4cb3-b0d2-7c38740dadf3}</Project>
+      <Name>MeuPrimeiroCrud.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿namespace Apresentacao.View
+﻿namespace MeuPrimeiroCrud.View.View
 {
     partial class frmPesquisaClientes
     {

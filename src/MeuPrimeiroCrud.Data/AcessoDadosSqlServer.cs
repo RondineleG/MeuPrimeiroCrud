@@ -1,6 +1,6 @@
-﻿namespace AcessoBancoDados
+﻿namespace MeuPrimeiroCrud.Data
 {
-    using AcessoBancoDados.Properties;
+    using MeuPrimeiroCrud.Data.Properties;
     using System;
     using System.Data;
     using System.Data.SqlClient;
