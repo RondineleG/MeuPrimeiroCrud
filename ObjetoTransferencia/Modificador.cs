@@ -1,6 +1,6 @@
 ﻿namespace Apresentacao.Models
 {
-    public  enum Modificador
+    public enum Modificador
     {
         Alterar,
         Inserir,

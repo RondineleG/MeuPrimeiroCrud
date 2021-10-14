@@ -67,7 +67,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Modificador.cs" />
     <Compile Include="View\frmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +102,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
@@ -162,7 +162,6 @@
   <ItemGroup>
     <Content Include="Imagens\Icone.ico" />
     <Content Include="Imagens\logo.jpg" />
-    <Content Include="Imagens\Splsash.jpg" />
     <None Include="Resources\P2.png" />
     <None Include="Resources\P1.png" />
   </ItemGroup>

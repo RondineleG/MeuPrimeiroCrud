@@ -29,7 +29,7 @@
                 AcessoDados.AdicionarParametros("@Email", cliente.Email);
                 AcessoDados.AdicionarParametros("@Obs", cliente.Obs);
 
-                string codigo = this.AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteInserir").ToString();
+                string codigo = AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteInserir").ToString();
 
                 return codigo;
             }
@@ -92,7 +92,7 @@
 
         }
 
-        public ClienteColecao ConsulTarPorNome(String nome)
+        public ClienteColecao ConsulTarPorNome(string nome)
         {
             try
             {
@@ -135,7 +135,7 @@
             }
         }
 
-        public ClienteColecao ConsulTarPorCodigo(Int32 codigo)
+        public ClienteColecao ConsulTarPorCodigo(int codigo)
         {
             try
             {

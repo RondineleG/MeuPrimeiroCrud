@@ -30,7 +30,7 @@ namespace Apresentacao.View
                 pictureBox[count].Visible = true;
                 if (count2 == 1)
                 {
-                   timerSplash.Interval = 500;
+                   timerSplash.Interval = 300;
                    pictureBox[count].BackgroundImage = Properties.Resources.Image2;
                    pictureBox[count].Size = new Size(13, 13);
                 }
@@ -46,7 +46,7 @@ namespace Apresentacao.View
             {
                 timerSplash.Enabled = false;
                 this.Hide();
-                frmPesquisaClientes frmMenu = new frmPesquisaClientes();
+                var frmMenu = new frmPesquisaClientes();
                 frmMenu.Show();
              }
  }

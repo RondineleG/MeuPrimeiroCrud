@@ -13,8 +13,8 @@ namespace Apresentacao.View
         public frmClientes(Modificador modificador, ClienteObjeto cliente)
         {
             InitializeComponent();
-               {
-                   this.telaSelecionada = modificador;
+            {
+                this.telaSelecionada = modificador;
 
                 if (modificador == Modificador.Alterar)
                 {
@@ -38,7 +38,7 @@ namespace Apresentacao.View
                     txtEstado.Text = cliente.Estado;
                     txtComplemento.Text = cliente.Complemento;
                     txtObs.Text = cliente.Obs;
-               }
+                }
 
 
                 else if (modificador == Modificador.Consultar)
@@ -65,7 +65,7 @@ namespace Apresentacao.View
                     txtEstado.Text = cliente.Estado;
                     txtComplemento.Text = cliente.Complemento;
                     txtObs.Text = cliente.Obs;
-                    
+
                     // Desabilitar campos para somenete leitura.
 
                     txtCodigo.Enabled = false;
@@ -87,7 +87,7 @@ namespace Apresentacao.View
 
                     btnSalvar.Visible = false;
                     btnCancelar.Visible = false;
-                   
+
 
 
                 }
@@ -97,7 +97,7 @@ namespace Apresentacao.View
                 {
                     this.lblCliente.Text = " Inserir Cliente";
 
-                    
+
 
                 }
 
@@ -105,11 +105,11 @@ namespace Apresentacao.View
 
         }
 
-     private void btnFeichar_Click(object sender, EventArgs e)
+        private void btnFeichar_Click(object sender, EventArgs e)
         {
             this.Close();
 
-       
+
         }
 
         private void btnMininizar_Click(object sender, EventArgs e)
@@ -119,60 +119,60 @@ namespace Apresentacao.View
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            
+
 
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-          // Verificar se e inserçao ou alteraçao.
+            // Verificar se e inserçao ou alteraçao.
             if (telaSelecionada == Modificador.Inserir)
             {
-                
-                    var clienteObjeto = new ClienteObjeto();
 
-                    var clienteNegocios = new ClienteNegocios();
-                    
-                     clienteObjeto.Nome = txtNome.Text;
-                     clienteObjeto.CPF = txtCPF.Text;
-                    clienteObjeto.DataNascimento = dtpDataNascimento.Value;
-                    if (rdbMasculino.Checked == true) // Masculino Como Principal
-                        clienteObjeto.Sexo = true;
-                    else 
-                        clienteObjeto.Sexo = false;
-                   
-                    clienteObjeto.Telefone = txtTelefone.Text;
-                    clienteObjeto.Celular = txtCelular.Text;
-                    clienteObjeto.Email = txtEmail.Text;
-                     clienteObjeto.CEP = txtCEP.Text;
-                    clienteObjeto.Endereco = txtEndereco.Text;
-                    clienteObjeto.Cidade = txtCidade.Text;
-                    clienteObjeto.Bairro = txtBairro.Text;
-                    clienteObjeto.Estado = txtEstado.Text;
-                     clienteObjeto.Complemento = txtComplemento.Text;
-                    clienteObjeto.Obs = txtObs.Text;
+                var clienteObjeto = new ClienteObjeto();
 
-                    string retorno = clienteNegocios.Inserir(clienteObjeto);
+                var clienteNegocios = new ClienteNegocios();
 
-                    try
-                    {
-                        int codRetorno = Convert.ToInt32(retorno);
+                clienteObjeto.Nome = txtNome.Text;
+                clienteObjeto.CPF = txtCPF.Text;
+                clienteObjeto.DataNascimento = dtpDataNascimento.Value;
+                if (rdbMasculino.Checked == true) // Masculino Como Principal
+                    clienteObjeto.Sexo = true;
+                else
+                    clienteObjeto.Sexo = false;
 
-                        MessageBox.Show(" Cliente inserido com sucesso. Código : " + codRetorno.ToString());
-                        this.DialogResult = DialogResult.Yes;
-                       
+                clienteObjeto.Telefone = txtTelefone.Text;
+                clienteObjeto.Celular = txtCelular.Text;
+                clienteObjeto.Email = txtEmail.Text;
+                clienteObjeto.CEP = txtCEP.Text;
+                clienteObjeto.Endereco = txtEndereco.Text;
+                clienteObjeto.Cidade = txtCidade.Text;
+                clienteObjeto.Bairro = txtBairro.Text;
+                clienteObjeto.Estado = txtEstado.Text;
+                clienteObjeto.Complemento = txtComplemento.Text;
+                clienteObjeto.Obs = txtObs.Text;
 
-                    }
-                    catch
-                    {
-                        MessageBox.Show(" Não foi possivel inserir cliente. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        this.DialogResult = DialogResult.No;
-                    }
+                string retorno = clienteNegocios.Inserir(clienteObjeto);
 
-            
-            
+                try
+                {
+                    int codRetorno = Convert.ToInt32(retorno);
+
+                    MessageBox.Show(" Cliente inserido com sucesso. Código : " + codRetorno.ToString());
+                    this.DialogResult = DialogResult.Yes;
+
+
+                }
+                catch
+                {
+                    MessageBox.Show(" Não foi possivel inserir cliente. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.DialogResult = DialogResult.No;
+                }
+
+
+
             }
-                           
+
             else if (telaSelecionada == Modificador.Alterar)
             {
                 var cliente = new ClienteObjeto();
@@ -212,12 +212,12 @@ namespace Apresentacao.View
                 }
                 catch
                 {
-                    
+
                     MessageBox.Show("Não foi possivel alterar cliente. Detalhes : " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     this.DialogResult = DialogResult.No;
                 }
 
-            
+
             }
             else if (telaSelecionada == Modificador.Consultar)
             {

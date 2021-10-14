@@ -1,8 +1,8 @@
-﻿using System;
-using System.Windows.Forms;
-using Apresentacao.Models;
+﻿using Apresentacao.Models;
 using ObjetoTransferencia;
 using RegraNegocios;
+using System;
+using System.Windows.Forms;
 
 namespace Apresentacao.View
 {
@@ -11,32 +11,32 @@ namespace Apresentacao.View
         public frmPesquisaClientes()
         {
             InitializeComponent();
-            
+
             // Não gerar linhas automaticas.
-                       dgvCliente.AutoGenerateColumns = false;
+            dgvCliente.AutoGenerateColumns = false;
         }
 
         private void AtualizaGrid()
-         {
-             ClienteNegocios clienteNegocios = new ClienteNegocios();
+        {
+            ClienteNegocios clienteNegocios = new ClienteNegocios();
 
-             ClienteColecao clienteColecao = new ClienteColecao();
+            ClienteColecao clienteColecao = new ClienteColecao();
 
-             clienteColecao = clienteNegocios.ConsulTarPorNome(txtPesquisa.Text);
+            clienteColecao = clienteNegocios.ConsulTarPorNome(txtPesquisa.Text);
 
-             dgvCliente.DataSource = null;
-             dgvCliente.DataSource = clienteColecao;
+            dgvCliente.DataSource = null;
+            dgvCliente.DataSource = clienteColecao;
 
-             dgvCliente.Update();
-             dgvCliente.Refresh();
-         }
+            dgvCliente.Update();
+            dgvCliente.Refresh();
+        }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             AtualizaGrid();
 
         }
-         
+
         private void btnMininizar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
@@ -51,21 +51,21 @@ namespace Apresentacao.View
             }
         }
 
-       private void btnCadastrar_Click(object sender, EventArgs e)
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
 
-            frmClientes cliente = new frmClientes (Modificador.Inserir,null);
+            frmClientes cliente = new frmClientes(Modificador.Inserir, null);
             DialogResult dialogResult = new DialogResult();
             dialogResult = cliente.ShowDialog();
-            
+
             if (dialogResult == DialogResult.Yes)
             {
                 AtualizaGrid();
             }
-            
+
 
         }
-        
+
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             // Verificar se existe dados selecionados.
@@ -83,9 +83,9 @@ namespace Apresentacao.View
             var dialogResult = cliente.ShowDialog();
 
             AtualizaGrid();
-            
-                     
-       }
+
+
+        }
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
@@ -105,12 +105,12 @@ namespace Apresentacao.View
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            
+
             // Verificar se existe dados selecionados.
 
             if (dgvCliente.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Nenhum cleinte selecionado !","Aviso",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Nenhum cleinte selecionado !", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 return;
             }
@@ -119,8 +119,8 @@ namespace Apresentacao.View
 
             DialogResult resultado;
 
-           resultado = MessageBox.Show("Tem certeza que deseja excluir cliente selecionado ? ", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if ( resultado == DialogResult.No)
+            resultado = MessageBox.Show("Tem certeza que deseja excluir cliente selecionado ? ", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultado == DialogResult.No)
             {
                 return;
 
@@ -128,24 +128,24 @@ namespace Apresentacao.View
 
             // Pegar cliente selecionado no Datagrid.
 
-            var clienteSelecionado = ( dgvCliente.SelectedRows[0].DataBoundItem as ClienteObjeto);
+            var clienteSelecionado = (dgvCliente.SelectedRows[0].DataBoundItem as ClienteObjeto);
 
             // Intânciar regra de negocios.
-            ClienteNegocios clienteNegocios = new ClienteNegocios ();
-            
-            // Usar o metodo excluir.
-          string retorno = clienteNegocios.Excluir(clienteSelecionado);
+            ClienteNegocios clienteNegocios = new ClienteNegocios();
 
-           // Verificar Se excluiu com sucesso
+            // Usar o metodo excluir.
+            string retorno = clienteNegocios.Excluir(clienteSelecionado);
+
+            // Verificar Se excluiu com sucesso
 
             try
             {
                 int codRetorno = Convert.ToInt32(retorno);
 
                 MessageBox.Show(" Cliente excluido com sucerro !", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
-                 AtualizaGrid();
-   
+
+                AtualizaGrid();
+
             }
             catch
             {
@@ -154,9 +154,9 @@ namespace Apresentacao.View
 
         }
 
-         
 
-         
-    }
+
 
     }
+
+}

@@ -59,7 +59,7 @@
             this.P1.BackColor = System.Drawing.Color.Transparent;
             this.P1.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
             this.P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P1.Location = new System.Drawing.Point(8, 312);
+            this.P1.Location = new System.Drawing.Point(2, 286);
             this.P1.Name = "P1";
             this.P1.Size = new System.Drawing.Size(10, 10);
             this.P1.TabIndex = 13;
@@ -71,7 +71,7 @@
             this.P3.BackColor = System.Drawing.Color.Transparent;
             this.P3.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
             this.P3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P3.Location = new System.Drawing.Point(90, 312);
+            this.P3.Location = new System.Drawing.Point(104, 286);
             this.P3.Name = "P3";
             this.P3.Size = new System.Drawing.Size(10, 10);
             this.P3.TabIndex = 12;
@@ -83,7 +83,7 @@
             this.P5.BackColor = System.Drawing.Color.Transparent;
             this.P5.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
             this.P5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P5.Location = new System.Drawing.Point(191, 312);
+            this.P5.Location = new System.Drawing.Point(207, 286);
             this.P5.Name = "P5";
             this.P5.Size = new System.Drawing.Size(10, 10);
             this.P5.TabIndex = 11;
@@ -95,7 +95,7 @@
             this.P2.BackColor = System.Drawing.Color.Transparent;
             this.P2.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
             this.P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P2.Location = new System.Drawing.Point(58, 312);
+            this.P2.Location = new System.Drawing.Point(44, 286);
             this.P2.Name = "P2";
             this.P2.Size = new System.Drawing.Size(10, 10);
             this.P2.TabIndex = 10;
@@ -107,7 +107,7 @@
             this.P4.BackColor = System.Drawing.Color.Transparent;
             this.P4.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
             this.P4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P4.Location = new System.Drawing.Point(138, 312);
+            this.P4.Location = new System.Drawing.Point(149, 286);
             this.P4.Name = "P4";
             this.P4.Size = new System.Drawing.Size(10, 10);
             this.P4.TabIndex = 9;
@@ -119,7 +119,7 @@
             this.P8.BackColor = System.Drawing.Color.Transparent;
             this.P8.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
             this.P8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P8.Location = new System.Drawing.Point(309, 312);
+            this.P8.Location = new System.Drawing.Point(375, 286);
             this.P8.Name = "P8";
             this.P8.Size = new System.Drawing.Size(10, 10);
             this.P8.TabIndex = 8;
@@ -131,7 +131,7 @@
             this.P6.BackColor = System.Drawing.Color.Transparent;
             this.P6.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
             this.P6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P6.Location = new System.Drawing.Point(226, 312);
+            this.P6.Location = new System.Drawing.Point(260, 286);
             this.P6.Name = "P6";
             this.P6.Size = new System.Drawing.Size(10, 10);
             this.P6.TabIndex = 7;
@@ -143,7 +143,7 @@
             this.P7.BackColor = System.Drawing.Color.Transparent;
             this.P7.BackgroundImage = global::Apresentacao.Properties.Resources.Image1;
             this.P7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P7.Location = new System.Drawing.Point(268, 312);
+            this.P7.Location = new System.Drawing.Point(317, 286);
             this.P7.Name = "P7";
             this.P7.Size = new System.Drawing.Size(10, 10);
             this.P7.TabIndex = 6;
@@ -156,7 +156,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(328, 326);
+            this.ClientSize = new System.Drawing.Size(397, 298);
             this.Controls.Add(this.P7);
             this.Controls.Add(this.P6);
             this.Controls.Add(this.P8);
