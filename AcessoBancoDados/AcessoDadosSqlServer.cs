@@ -22,18 +22,18 @@
             sqlParameterCollection.Clear();
         }
 
-        public void AdicionarParametros(String nomeParametro, Object valorParametro)
+        public void AdicionarParametros(string nomeParametro, object valorParametro)
         {
             sqlParameterCollection.Add(new SqlParameter(nomeParametro, valorParametro));
         }
 
         //Inserir, Alterar e Excluir.
-        public object ExecutarManipulacao(CommandType commandType, String nomeStoredProcedureOuTextoSql)
+        public object ExecutarManipulacao(CommandType commandType, string nomeStoredProcedureOuTextoSql)
         {
             try
             {
                 //Criar conexão
-                var sqlConnection = this.CriarConexao();
+                var sqlConnection = CriarConexao();
                 //Abrir conexão
                 sqlConnection.Open();
                 //Criar o comando que leva as informações para o banco
@@ -42,7 +42,7 @@
                 sqlCommand.CommandText = nomeStoredProcedureOuTextoSql;
                 sqlCommand.CommandTimeout = 1200;
 
-                foreach (SqlParameter sqlParameter in this.sqlParameterCollection)
+                foreach (SqlParameter sqlParameter in sqlParameterCollection)
                 {
                     sqlCommand.Parameters.Add(new SqlParameter(sqlParameter.ParameterName, sqlParameter.Value));
                 }
@@ -58,7 +58,7 @@
         }
 
         //Consultar registros no banco
-        public DataTable ExecutarConsulta(CommandType commandType, String nomeStoredProcedureOuTextoSql)
+        public DataTable ExecutarConsulta(CommandType commandType, string nomeStoredProcedureOuTextoSql)
         {
             try
             {
