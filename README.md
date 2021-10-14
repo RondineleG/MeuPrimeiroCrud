@@ -1,2 +1,1 @@
-# ProjetoEmCamadas
-Aprendendo a linguagem  Linguagem C# e SQL Server 
+# Crud projeto e camadas usando C# com Windows Forms e SQL Server 
