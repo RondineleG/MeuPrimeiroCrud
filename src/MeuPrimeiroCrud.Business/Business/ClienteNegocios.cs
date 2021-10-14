@@ -1,5 +1,6 @@
 ﻿namespace MeuPrimeiroCrud.Business
 {
+    using MeuPrimeiroCrud.Data;
     using MeuPrimeiroCrud.Business.Models;
     using MeuPrimeiroCrud.Data;
     using System;
