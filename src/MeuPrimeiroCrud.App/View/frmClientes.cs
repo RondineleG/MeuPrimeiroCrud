@@ -9,7 +9,7 @@ namespace MeuPrimeiroCrud.View.View
     {
         Modificador telaSelecionada;
 
-        public frmClientes(Modificador modificador, ClienteObjeto cliente)
+        public frmClientes(Modificador modificador, Cliente cliente)
         {
             InitializeComponent();
             {
@@ -128,7 +128,7 @@ namespace MeuPrimeiroCrud.View.View
             if (telaSelecionada == Modificador.Inserir)
             {
 
-                var clienteObjeto = new ClienteObjeto();
+                var clienteObjeto = new Cliente();
 
                 var clienteNegocios = new ClienteNegocios();
 
@@ -174,7 +174,7 @@ namespace MeuPrimeiroCrud.View.View
 
             else if (telaSelecionada == Modificador.Alterar)
             {
-                var cliente = new ClienteObjeto();
+                var cliente = new Cliente();
 
                 cliente.Codigo = Convert.ToInt32(txtCodigo.Text);
                 cliente.Nome = txtNome.Text;

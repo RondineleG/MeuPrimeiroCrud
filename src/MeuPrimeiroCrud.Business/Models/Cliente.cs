@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    public class ClienteObjeto
+    public class Cliente
     {
         public int Codigo { get; set; }
         public string Nome { get; set; }
@@ -20,8 +20,5 @@
         public string Complemento { get; set; }
         public string Email { get; set; }
         public string Obs { get; set; }
-    }
-    public class ClienteColecao : List<ClienteObjeto>
-    {
     }
 }

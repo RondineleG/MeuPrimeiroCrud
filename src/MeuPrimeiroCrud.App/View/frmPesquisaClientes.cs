@@ -1,6 +1,7 @@
 ﻿using MeuPrimeiroCrud.Business;
 using MeuPrimeiroCrud.Business.Models;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace MeuPrimeiroCrud.View.View
@@ -19,7 +20,7 @@ namespace MeuPrimeiroCrud.View.View
         {
             ClienteNegocios clienteNegocios = new ClienteNegocios();
 
-            ClienteColecao clienteColecao = new ClienteColecao();
+            var clienteColecao = new List<Cliente>();
 
             clienteColecao = clienteNegocios.ConsulTarPorNome(txtPesquisa.Text);
 
@@ -76,7 +77,7 @@ namespace MeuPrimeiroCrud.View.View
                 return;
             }
 
-            var clienteSelecionado = (dgvCliente.SelectedRows[0].DataBoundItem as ClienteObjeto);
+            var clienteSelecionado = (dgvCliente.SelectedRows[0].DataBoundItem as Cliente);
 
             var cliente = new frmClientes(Modificador.Alterar, clienteSelecionado);
             var dialogResult = cliente.ShowDialog();
@@ -96,7 +97,7 @@ namespace MeuPrimeiroCrud.View.View
                 return;
             }
 
-            var clienteSelecionado = (dgvCliente.SelectedRows[0].DataBoundItem as ClienteObjeto);
+            var clienteSelecionado = (dgvCliente.SelectedRows[0].DataBoundItem as Cliente);
 
             var cliente = new frmClientes(Modificador.Consultar, clienteSelecionado);
             cliente.ShowDialog();
@@ -127,7 +128,7 @@ namespace MeuPrimeiroCrud.View.View
 
             // Pegar cliente selecionado no Datagrid.
 
-            var clienteSelecionado = (dgvCliente.SelectedRows[0].DataBoundItem as ClienteObjeto);
+            var clienteSelecionado = (dgvCliente.SelectedRows[0].DataBoundItem as Cliente);
 
             // Intânciar regra de negocios.
             ClienteNegocios clienteNegocios = new ClienteNegocios();

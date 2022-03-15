@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\ClienteNegocios.cs" />
-    <Compile Include="Models\ClienteObjeto.cs" />
+    <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Modificador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

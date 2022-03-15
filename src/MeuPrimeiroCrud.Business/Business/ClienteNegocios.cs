@@ -1,16 +1,16 @@
 ﻿namespace MeuPrimeiroCrud.Business
 {
-    using MeuPrimeiroCrud.Data;
     using MeuPrimeiroCrud.Business.Models;
     using MeuPrimeiroCrud.Data;
     using System;
+    using System.Collections.Generic;
     using System.Data;
 
     public class ClienteNegocios
     {
         private readonly AcessoDadosSqlServer AcessoDados = new AcessoDadosSqlServer();
 
-        public string Inserir(ClienteObjeto cliente)
+        public string Inserir(Cliente cliente)
         {
             try
             {
@@ -40,7 +40,7 @@
             }
         }
 
-        public string Alterar(ClienteObjeto cliente)
+        public string Alterar(Cliente cliente)
         {
             try
             {
@@ -72,7 +72,7 @@
 
         }
 
-        public string Excluir(ClienteObjeto cliente)
+        public string Excluir(Cliente cliente)
         {
             try
             {
@@ -93,11 +93,11 @@
 
         }
 
-        public ClienteColecao ConsulTarPorNome(string nome)
+        public List<Cliente> ConsulTarPorNome(string nome)
         {
             try
             {
-                var clienteColecao = new ClienteColecao();
+                var clienteColecao = new List<Cliente>();
 
                 AcessoDados.LimparParametros();
                 AcessoDados.AdicionarParametros("@Nome", nome);
@@ -105,7 +105,7 @@
 
                 foreach (DataRow Linha in dataTableCliente.Rows)
                 {
-                    var cliente = new ClienteObjeto
+                    var cliente = new Cliente
                     {
                         Codigo = Convert.ToInt32(Linha["Codigo"]),
                         Nome = Convert.ToString(Linha["Nome"]),
@@ -136,11 +136,11 @@
             }
         }
 
-        public ClienteColecao ConsulTarPorCodigo(int codigo)
+        public List<Cliente> ConsulTarPorCodigo(int codigo)
         {
             try
             {
-                var clienteColecao = new ClienteColecao();
+                var clienteColecao = new List<Cliente>();
 
                 AcessoDados.LimparParametros();
                 AcessoDados.AdicionarParametros("@Codigo", codigo);
@@ -148,7 +148,7 @@
 
                 foreach (DataRow Linha in dataTableCliente.Rows)
                 {
-                    var cliente = new ClienteObjeto
+                    var cliente = new Cliente
                     {
                         Codigo = Convert.ToInt32(Linha["Codigo"]),
                         Nome = Convert.ToString(Linha["Nome"]),
@@ -178,7 +178,6 @@
                 throw new Exception("Não Foi Possive Consultar O Cliente Por Codigo. Detalher : " + exception.Message);
             }
         }
-
 
     }
 }

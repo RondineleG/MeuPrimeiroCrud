@@ -52,7 +52,7 @@
     </StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Imagens\Icone.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\Imagens\Icone.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -154,16 +154,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Imagens\Image1.png" />
+    <None Include="Resources\Imagens\Image1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Imagens\Image2.png" />
+    <None Include="Resources\Imagens\Image2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Imagens\Icone.ico" />
-    <Content Include="Imagens\logo.jpg" />
-    <None Include="Resources\P2.png" />
-    <None Include="Resources\P1.png" />
+    <Content Include="Resources\Imagens\Icone.ico" />
+    <Content Include="Resources\Imagens\logo.jpg" />
+    <None Include="Resources\Imagens\P2.png" />
+    <None Include="Resources\Imagens\P1.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
