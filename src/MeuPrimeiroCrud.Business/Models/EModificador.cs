@@ -1,6 +1,6 @@
 ﻿namespace MeuPrimeiroCrud.Business.Models
 {
-    public enum Modificador
+    public enum EModificador
     {
         Alterar,
         Inserir,

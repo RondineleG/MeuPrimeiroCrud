@@ -1,6 +1,6 @@
 ﻿namespace MeuPrimeiroCrud.View.View
 {
-    partial class frmSplash
+    partial class SplashScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplash));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashScreen));
             this.timerSplash = new System.Windows.Forms.Timer(this.components);
             this.P1 = new System.Windows.Forms.PictureBox();
             this.P3 = new System.Windows.Forms.PictureBox();
@@ -71,7 +71,7 @@
             this.P3.BackColor = System.Drawing.Color.Transparent;
             this.P3.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P3.Location = new System.Drawing.Point(104, 286);
+            this.P3.Location = new System.Drawing.Point(102, 286);
             this.P3.Name = "P3";
             this.P3.Size = new System.Drawing.Size(10, 10);
             this.P3.TabIndex = 12;
@@ -95,7 +95,7 @@
             this.P2.BackColor = System.Drawing.Color.Transparent;
             this.P2.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P2.Location = new System.Drawing.Point(44, 286);
+            this.P2.Location = new System.Drawing.Point(51, 286);
             this.P2.Name = "P2";
             this.P2.Size = new System.Drawing.Size(10, 10);
             this.P2.TabIndex = 10;
@@ -107,7 +107,7 @@
             this.P4.BackColor = System.Drawing.Color.Transparent;
             this.P4.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P4.Location = new System.Drawing.Point(149, 286);
+            this.P4.Location = new System.Drawing.Point(150, 286);
             this.P4.Name = "P4";
             this.P4.Size = new System.Drawing.Size(10, 10);
             this.P4.TabIndex = 9;
@@ -131,7 +131,7 @@
             this.P6.BackColor = System.Drawing.Color.Transparent;
             this.P6.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P6.Location = new System.Drawing.Point(260, 286);
+            this.P6.Location = new System.Drawing.Point(265, 286);
             this.P6.Name = "P6";
             this.P6.Size = new System.Drawing.Size(10, 10);
             this.P6.TabIndex = 7;
@@ -143,14 +143,14 @@
             this.P7.BackColor = System.Drawing.Color.Transparent;
             this.P7.BackgroundImage = global::MeuPrimeiroCrud.View.Properties.Resources.Image1;
             this.P7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.P7.Location = new System.Drawing.Point(317, 286);
+            this.P7.Location = new System.Drawing.Point(319, 286);
             this.P7.Name = "P7";
             this.P7.Size = new System.Drawing.Size(10, 10);
             this.P7.TabIndex = 6;
             this.P7.TabStop = false;
             this.P7.Visible = false;
             // 
-            // frmSplash
+            // SplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -167,7 +167,7 @@
             this.Controls.Add(this.P1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmSplash";
+            this.Name = "SplashScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Maroon;
             this.Load += new System.EventHandler(this.frmSplash_Load);

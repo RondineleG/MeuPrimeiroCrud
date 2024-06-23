@@ -1,6 +1,6 @@
 ﻿namespace MeuPrimeiroCrud.View.View
 {
-    partial class frmPesquisaClientes
+    partial class PesquisaClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -33,40 +33,40 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPesquisaClientes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PesquisaClientes));
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
+            this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDataNascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.lblPesquisa = new System.Windows.Forms.Label();
             this.pnlTopo = new System.Windows.Forms.Panel();
             this.btnMininizar = new System.Windows.Forms.Button();
             this.btnFeichar = new System.Windows.Forms.Button();
-            this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDataNascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.pnlTopo.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(361, 459);
+            this.btnConsultar.Location = new System.Drawing.Point(381, 545);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(64, 27);
             this.btnConsultar.TabIndex = 41;
-            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.Text = "Visualizar";
             this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(244, 459);
+            this.btnExcluir.Location = new System.Drawing.Point(258, 545);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(61, 27);
             this.btnExcluir.TabIndex = 40;
@@ -76,7 +76,7 @@
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(133, 459);
+            this.btnAlterar.Location = new System.Drawing.Point(138, 545);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(63, 27);
             this.btnAlterar.TabIndex = 39;
@@ -86,7 +86,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(15, 459);
+            this.btnCadastrar.Location = new System.Drawing.Point(12, 545);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 27);
             this.btnCadastrar.TabIndex = 38;
@@ -119,12 +119,61 @@
             this.dgvCliente.MultiSelect = false;
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCliente.Size = new System.Drawing.Size(708, 343);
+            this.dgvCliente.Size = new System.Drawing.Size(708, 429);
             this.dgvCliente.TabIndex = 37;
+            // 
+            // colCodigo
+            // 
+            this.colCodigo.DataPropertyName = "Codigo";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.colCodigo.DefaultCellStyle = dataGridViewCellStyle1;
+            this.colCodigo.HeaderText = "Código";
+            this.colCodigo.Name = "colCodigo";
+            this.colCodigo.ReadOnly = true;
+            this.colCodigo.Width = 65;
+            // 
+            // colNome
+            // 
+            this.colNome.DataPropertyName = "Nome";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colNome.DefaultCellStyle = dataGridViewCellStyle2;
+            this.colNome.HeaderText = "Nome";
+            this.colNome.Name = "colNome";
+            this.colNome.ReadOnly = true;
+            this.colNome.Width = 200;
+            // 
+            // colCPF
+            // 
+            this.colCPF.DataPropertyName = "CPF";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colCPF.DefaultCellStyle = dataGridViewCellStyle3;
+            this.colCPF.HeaderText = "CPF";
+            this.colCPF.Name = "colCPF";
+            this.colCPF.ReadOnly = true;
+            // 
+            // colDataNascimento
+            // 
+            this.colDataNascimento.DataPropertyName = "DataNascimento";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Format = "dd/MM/yyyy";
+            this.colDataNascimento.DefaultCellStyle = dataGridViewCellStyle4;
+            this.colDataNascimento.HeaderText = "Data Nascimento";
+            this.colDataNascimento.Name = "colDataNascimento";
+            this.colDataNascimento.ReadOnly = true;
+            this.colDataNascimento.Width = 150;
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.Width = 150;
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(361, 64);
+            this.btnPesquisar.Location = new System.Drawing.Point(656, 67);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(64, 23);
             this.btnPesquisar.TabIndex = 36;
@@ -136,7 +185,7 @@
             // 
             this.txtPesquisa.Location = new System.Drawing.Point(59, 67);
             this.txtPesquisa.Name = "txtPesquisa";
-            this.txtPesquisa.Size = new System.Drawing.Size(291, 20);
+            this.txtPesquisa.Size = new System.Drawing.Size(576, 20);
             this.txtPesquisa.TabIndex = 35;
             // 
             // lblPesquisa
@@ -189,61 +238,12 @@
             this.btnFeichar.UseVisualStyleBackColor = false;
             this.btnFeichar.Click += new System.EventHandler(this.btnFeichar_Click);
             // 
-            // colCodigo
-            // 
-            this.colCodigo.DataPropertyName = "Codigo";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.colCodigo.DefaultCellStyle = dataGridViewCellStyle1;
-            this.colCodigo.HeaderText = "Código";
-            this.colCodigo.Name = "colCodigo";
-            this.colCodigo.ReadOnly = true;
-            this.colCodigo.Width = 65;
-            // 
-            // colNome
-            // 
-            this.colNome.DataPropertyName = "Nome";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colNome.DefaultCellStyle = dataGridViewCellStyle2;
-            this.colNome.HeaderText = "Nome";
-            this.colNome.Name = "colNome";
-            this.colNome.ReadOnly = true;
-            this.colNome.Width = 200;
-            // 
-            // colCPF
-            // 
-            this.colCPF.DataPropertyName = "CPF";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colCPF.DefaultCellStyle = dataGridViewCellStyle3;
-            this.colCPF.HeaderText = "CPF";
-            this.colCPF.Name = "colCPF";
-            this.colCPF.ReadOnly = true;
-            // 
-            // colDataNascimento
-            // 
-            this.colDataNascimento.DataPropertyName = "DataNascimento";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Format = "dd/MM/yyyy";
-            this.colDataNascimento.DefaultCellStyle = dataGridViewCellStyle4;
-            this.colDataNascimento.HeaderText = "Data Nascimento";
-            this.colDataNascimento.Name = "colDataNascimento";
-            this.colDataNascimento.ReadOnly = true;
-            this.colDataNascimento.Width = 150;
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            this.Email.Width = 150;
-            // 
-            // frmPesquisaClientes
+            // PesquisaClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(727, 498);
+            this.ClientSize = new System.Drawing.Size(727, 584);
             this.Controls.Add(this.pnlTopo);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.btnExcluir);
@@ -255,7 +255,7 @@
             this.Controls.Add(this.lblPesquisa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmPesquisaClientes";
+            this.Name = "PesquisaClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             this.pnlTopo.ResumeLayout(false);

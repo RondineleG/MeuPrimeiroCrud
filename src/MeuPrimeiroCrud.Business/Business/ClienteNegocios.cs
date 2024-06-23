@@ -2,6 +2,7 @@
 {
     using MeuPrimeiroCrud.Business.Models;
     using MeuPrimeiroCrud.Data;
+
     using System;
     using System.Collections.Generic;
     using System.Data;
@@ -29,10 +30,7 @@
                 AcessoDados.AdicionarParametros("@Complemento", cliente.Complemento);
                 AcessoDados.AdicionarParametros("@Email", cliente.Email);
                 AcessoDados.AdicionarParametros("@Obs", cliente.Obs);
-
-                string codigo = AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteInserir").ToString();
-
-                return codigo;
+                return AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteInserir").ToString(); ;
             }
             catch (Exception ex)
             {
@@ -60,10 +58,7 @@
                 AcessoDados.AdicionarParametros("@Complemento", cliente.Complemento);
                 AcessoDados.AdicionarParametros("@Email", cliente.Email);
                 AcessoDados.AdicionarParametros("@Obs", cliente.Obs);
-
-                string Codigo = AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteAlterar").ToString();
-
-                return Codigo;
+                return AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteAlterar").ToString(); ;
             }
             catch (Exception ex)
             {
@@ -78,19 +73,12 @@
             {
                 AcessoDados.LimparParametros();
                 AcessoDados.AdicionarParametros("@Codigo", cliente.Codigo);
-                string Codigo = AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteExcluir").ToString();
-                return Codigo;
-
+                return AcessoDados.ExecutarManipulacao(CommandType.StoredProcedure, "ClienteExcluir").ToString(); ;
             }
-
             catch (Exception exception)
             {
                 return exception.Message;
-
             }
-
-
-
         }
 
         public List<Cliente> ConsulTarPorNome(string nome)
@@ -98,11 +86,9 @@
             try
             {
                 var clienteColecao = new List<Cliente>();
-
                 AcessoDados.LimparParametros();
                 AcessoDados.AdicionarParametros("@Nome", nome);
-                var dataTableCliente = this.AcessoDados.ExecutarConsulta(CommandType.StoredProcedure, "ClienteConsultaPorNome");
-
+                var dataTableCliente = AcessoDados.ExecutarConsulta(CommandType.StoredProcedure, "ClienteConsultaPorNome");
                 foreach (DataRow Linha in dataTableCliente.Rows)
                 {
                     var cliente = new Cliente
@@ -123,11 +109,8 @@
                         Email = Convert.ToString(Linha["Email"]),
                         Obs = Convert.ToString(Linha["Obs"])
                     };
-
                     clienteColecao.Add(cliente);
                 }
-
-
                 return clienteColecao;
             }
             catch (Exception exception)
@@ -141,11 +124,9 @@
             try
             {
                 var clienteColecao = new List<Cliente>();
-
                 AcessoDados.LimparParametros();
                 AcessoDados.AdicionarParametros("@Codigo", codigo);
-                var dataTableCliente = this.AcessoDados.ExecutarConsulta(CommandType.StoredProcedure, "ClienteConsultaPorNome");
-
+                var dataTableCliente = AcessoDados.ExecutarConsulta(CommandType.StoredProcedure, "ClienteConsultaPorNome");
                 foreach (DataRow Linha in dataTableCliente.Rows)
                 {
                     var cliente = new Cliente
@@ -166,11 +147,8 @@
                         Email = Convert.ToString(Linha["Email"]),
                         Obs = Convert.ToString(Linha[" bs"])
                     };
-
                     clienteColecao.Add(cliente);
                 }
-
-
                 return clienteColecao;
             }
             catch (Exception exception)
@@ -178,6 +156,5 @@
                 throw new Exception("Não Foi Possive Consultar O Cliente Por Codigo. Detalher : " + exception.Message);
             }
         }
-
     }
 }

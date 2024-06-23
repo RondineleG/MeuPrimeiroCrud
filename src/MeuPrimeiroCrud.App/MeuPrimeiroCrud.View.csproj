@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MeuPrimeiroCrud.View</RootNamespace>
     <AssemblyName>MeuPrimeiroCrud.View</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
@@ -67,39 +67,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="View\frmClientes.cs">
+    <Compile Include="View\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\frmClientes.Designer.cs">
-      <DependentUpon>frmClientes.cs</DependentUpon>
+    <Compile Include="View\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\frmPesquisaClientes.cs">
+    <Compile Include="View\PesquisaClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\frmPesquisaClientes.Designer.cs">
-      <DependentUpon>frmPesquisaClientes.cs</DependentUpon>
+    <Compile Include="View\PesquisaClientes.Designer.cs">
+      <DependentUpon>PesquisaClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\frmSplash.cs">
+    <Compile Include="View\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\frmSplash.designer.cs">
-      <DependentUpon>frmSplash.cs</DependentUpon>
+    <Compile Include="View\SplashScreen.designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\frmClientes.resx">
-      <DependentUpon>frmClientes.cs</DependentUpon>
+    <EmbeddedResource Include="View\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\frmPesquisaClientes.resx">
-      <DependentUpon>frmPesquisaClientes.cs</DependentUpon>
+    <EmbeddedResource Include="View\PesquisaClientes.resx">
+      <DependentUpon>PesquisaClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\frmSplash.resx">
-      <DependentUpon>frmSplash.cs</DependentUpon>
+    <EmbeddedResource Include="View\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">

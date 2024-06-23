@@ -8,7 +8,7 @@
     {
         private static void Main()
         {
-            Application.Run(new frmPesquisaClientes());
+            Application.Run(new PesquisaClientes());
         }
     }
 }

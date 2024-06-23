@@ -1,6 +1,6 @@
 ﻿namespace MeuPrimeiroCrud.View.View
 {
-    partial class frmClientes
+    partial class Clientes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClientes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             this.btnFeichar = new System.Windows.Forms.Button();
             this.btnMininizar = new System.Windows.Forms.Button();
             this.lblCliente = new System.Windows.Forms.Label();
