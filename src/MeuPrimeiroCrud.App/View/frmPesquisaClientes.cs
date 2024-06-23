@@ -1,5 +1,6 @@
 ﻿using MeuPrimeiroCrud.Business;
 using MeuPrimeiroCrud.Business.Models;
+
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -11,9 +12,8 @@ namespace MeuPrimeiroCrud.View.View
         public frmPesquisaClientes()
         {
             InitializeComponent();
-
-            // Não gerar linhas automaticas.
             dgvCliente.AutoGenerateColumns = false;
+            AtualizaGrid();
         }
 
         private void AtualizaGrid()

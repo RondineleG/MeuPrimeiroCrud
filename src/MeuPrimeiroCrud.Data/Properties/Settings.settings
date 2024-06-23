@@ -4,10 +4,10 @@
   <Settings>
     <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;s&lt;/ConnectionString&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Server=DEV\LOCALHOST;Database=DemoDatabase;Persist Security Info=True;User ID=sa;Password=Vv2k3@dev; MultipleActiveResultSets=true;&lt;/ConnectionString&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">s</Value>
+      <Value Profile="(Default)">Server=DEV\LOCALHOST;Database=DemoDatabase;Persist Security Info=True;User ID=sa;Password=Vv2k3@dev; MultipleActiveResultSets=true;</Value>
     </Setting>
   </Settings>
 </SettingsFile>
